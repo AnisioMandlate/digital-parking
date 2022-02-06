@@ -11,25 +11,37 @@ const Register = () => {
       </h1>
       <form className={styles.form}>
         <div className={styles["form-group"]}>
-          <label htmlFor="email">Email</label>
+          <label htmlFor="email">Name</label>
           <input
-            type="email"
-            name="email"
+            type="text"
+            name="name"
             // value={email}
           />
         </div>
 
         <div className={styles["form-group"]}>
-          <label htmlFor="password">Password</label>
+          <label htmlFor="password">Phone number</label>
           <input
-            type="password"
-            name="password"
+            type="text"
+            name="phone-number"
+            pattern="[0-9]+"
             // value={password}
             // onChange={onChange}
           />
         </div>
+
         <div className={styles["form-group"]}>
-          <label htmlFor="password">Confirm Password</label>
+          <label htmlFor="password">Username</label>
+          <input
+            type="text"
+            name="username"
+            // value={password}
+            // onChange={onChange}
+          />
+        </div>
+
+        <div className={styles["form-group"]}>
+          <label htmlFor="password">Password</label>
           <input
             type="password"
             name="password"
