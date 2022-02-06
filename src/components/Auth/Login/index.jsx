@@ -1,9 +1,17 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // Styles
 import styles from "./Login.module.css";
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    console.log("Submited");
+    navigate("/");
+  };
+
   return (
     <div className={styles["form-container"]}>
       <h1>
@@ -32,6 +40,7 @@ const Login = () => {
           type="submit"
           value="Login"
           className={styles["submit-button"]}
+          onClick={handleClick}
         />
       </form>
       <div className={styles["footer"]}>

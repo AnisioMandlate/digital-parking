@@ -1,9 +1,15 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 // Styles
 import styles from "./Register.module.css";
 
 const Register = () => {
+  const navigate = useNavigate();
+  const handleClick = (e) => {
+    e.preventDefault();
+    console.log("Submited");
+    navigate("/");
+  };
   return (
     <div className={styles["form-container"]}>
       <h1>
@@ -53,6 +59,7 @@ const Register = () => {
           type="submit"
           value="Register"
           className={styles["submit-button"]}
+          onClick={handleClick}
         />
       </form>
     </div>
