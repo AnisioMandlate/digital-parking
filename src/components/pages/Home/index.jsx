@@ -5,7 +5,6 @@ import styles from "./Home.module.css";
 
 import mapImg from "../../../assets/map.jpeg";
 const Home = () => {
-  const position = [51.505, -0.09];
   return (
     <div>
       <header className={styles.header}>
