@@ -34,6 +34,13 @@ const Login = () => {
           className={styles["submit-button"]}
         />
       </form>
+      <div className={styles["footer"]}>
+        <p className={styles["footer-text"]}>Forgot password</p>
+        <p>or</p>
+        <Link to="/register" className={styles["footer-text"]}>
+          Register with us
+        </Link>
+      </div>
     </div>
   );
 };

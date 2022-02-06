@@ -5,7 +5,7 @@
   --color-title-in-primary: #ffffff;
   --color-text-in-primary: #d4c2ff;
   --color-text-title: #252a28;
-  --color-text: #8fa7b2;
+  --color-text: #434647;
   --color-line-in-white: #3a3a3a;
   --color-input-background: #f8f8fc;
   --color-button-text: #ffffff;
@@ -45,6 +45,6 @@ textarea {
 
 @media (min-width: 700px) {
   :root {
-    font-size: 62.5%;
+    font-size: 82.5%;
   }
 }
